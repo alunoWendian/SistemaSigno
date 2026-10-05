@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1d1235 0%, #321f52 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+h1 {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffd700;
+}
+
+p {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #d1d1d1;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #ffd700;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #ffd700;
+    color: #1d1235;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #e6c200;
+}
+
+.escondido {
+    display: none !important;
+}
+
+.erro {
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(255, 77, 77, 0.2);
+    border: 1px solid #ff4d4d;
+    color: #ff8080;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.resultado {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 0.5s ease;
+}
+
+.resultado h2 {
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.destaque {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+.detalhes {
+    margin-top: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.detalhes p {
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.secao-caracteristicas {
+    margin-top: 15px;
+    border-top: 1px dashed rgba(255, 255, 255, 0.2);
+    padding-top: 10px;
+}
+
+#listaCaracteristicas {
+    list-style-type: none;
+    padding-left: 5px;
+    margin-top: 8px;
+}
+
+#listaCaracteristicas li {
+    background: rgba(255, 255, 255, 0.05);
+    margin-bottom: 6px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.88rem;
+    color: #e0e0e0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
